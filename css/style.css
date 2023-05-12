@@ -1,0 +1,40 @@
+@import url(reset);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fuenteprincipal: 'Montserrat',
+        sans-serif;
+    --fuentestitulos: 'Handlee',
+        cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --font-size: 1em;
+    --anchomaximo: 68.75em;
+
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--font-size);
+}
