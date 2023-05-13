@@ -113,6 +113,25 @@ header nav .menu li:last-child a {
 /* fin de header */
 
 
+/* comienzo blog */
+main .row {
+    display: flex;
+
+}
+
+main .container {
+    position: relative;
+}
+
+main section article {
+    padding: 1.25em;
+}
+
+
+
+/* fin blog */
+
+
 /* inicio mediaqueries */
 
 @media(min-width:48em) {
