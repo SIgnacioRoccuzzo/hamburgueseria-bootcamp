@@ -124,7 +124,51 @@ main .container {
 }
 
 main section article {
-    padding: 1.25em;
+    padding: 1em;
+
+}
+
+.row article img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+.row article div>h5 {
+    background-color: tomato;
+    width: 35px;
+    height: 35px;
+    color: white;
+    position: relative;
+    top: -100px;
+}
+
+.row article div .text {
+    text-align: center;
+
+}
+
+.row article div>h3 {
+    font-size: 0.75em;
+
+}
+
+.row article div>h4 {
+    font-size: 0.438em;
+    color: var(--colorprincipal);
+
+}
+
+.row article div>p {
+    font-size: 0.533em;
+    color: #999;
+}
+
+.row article div>a {
+    color: var(--colorprincipal);
+    font-size: 0.438em;
 }
 
 
