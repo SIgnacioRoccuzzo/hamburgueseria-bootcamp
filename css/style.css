@@ -115,70 +115,94 @@ header nav .menu li:last-child a {
 
 /* comienzo blog */
 main .row {
-    display: flex;
-
+    display: block;
 }
 
-main .container {
+main .container>h2 {
+    text-align: center;
+    font-family: var(--fuentestitulos);
+    font-size: 250%;
+    font-style: italic;
     position: relative;
+
 }
 
-main section article {
-    padding: 1em;
+main .container>hr {
+    width: 4.5em;
+    color: var(--colorprincipal);
+    padding: auto;
+}
 
+main .container>span {
+    color: var(--colorprincipal);
+    margin-left: 12.9em;
+    font-weight: 900;
+    position: relative;
+    bottom: 0.9em;
+}
+
+main .container h2>span {
+    color: var(--colorprincipal);
+}
+
+main .container h2>hr {
+    width: 2.1em;
+    color: var(--colorprincipal);
 }
 
 .row article img {
-    width: 150px;
-    height: 100px;
+    width: 12.532em;
+    height: 9.375em;
     object-fit: cover;
-    object-position: center center;
-
 }
 
-.row article div>h5 {
+.row article h5 {
     background-color: tomato;
-    width: 35px;
-    height: 35px;
+    width: 3.5em;
+    height: 3.5em;
     color: white;
     position: relative;
-    top: -100px;
-}
-
-.row article div .text {
+    top: 3.48em;
     text-align: center;
+    font-size: 1em;
+    padding: 0.5em;
+    opacity: 85%;
+}
+
+.row article {
+    margin-left: 7em;
 
 }
 
-.row article div>h3 {
-    font-size: 0.75em;
-
+.row article .text>h3 {
+    font-size: 1.2em;
+    margin-top: 1.3em;
 }
 
-.row article div>h4 {
-    font-size: 0.438em;
+.row article .text>h4 {
+    font-size: 0.8em;
     color: var(--colorprincipal);
-
+    font-weight: 530;
+    margin-top: 1em;
 }
 
-.row article div>p {
-    font-size: 0.533em;
+.row article .text>p {
+    font-size: 0.9em;
     color: #999;
 }
 
 .row article div>a {
     color: var(--colorprincipal);
-    font-size: 0.438em;
+    font-size: 0.7em;
+    font-weight: 550;
 }
-
-
 
 /* fin blog */
 
 
 /* inicio mediaqueries */
 
-@media(min-width:48em) {
+@media(min-width: 48em) {
     header .nav-top span {
         color: white;
         display: inline;
@@ -189,9 +213,54 @@ main section article {
     }
 
     header .nav-top .container {
-
         justify-content: space-between;
     }
+
+    main .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container>span {
+        left: 11em;
+    }
+
+    .row article .text>h3 {
+        font-size: 1em;
+        margin: 0 1em 0.5em 1em;
+        margin-top: 1em;
+    }
+
+    .row article {
+        padding: 1em;
+        margin-left: -1em;
+        position: relative;
+        bottom: 2.5em;
+        margin: 0 auto;
+    }
+
+    .row article img {
+        width: 15em;
+    }
+
+    .row article .text>h4 {
+        font-size: 0.8em;
+        margin: 0 1em 1em 1em;
+
+    }
+
+    .row article .text>p {
+        font-size: 0.7em;
+        margin: 0 1em 0 1em;
+    }
+
+    .row article div>a {
+        margin: 0 1em 0 1em;
+    }
+
+
+
 }
 
 @media (min-width: 62.75em) {
@@ -211,5 +280,47 @@ main section article {
         padding: 0.5em 0 1.25em 1.25;
         border-bottom: 0px;
     }
+
+    main .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container>span {
+        left: 21.3em;
+    }
+
+    .row article .text>h3 {
+        font-size: 1em;
+        margin: 0 1em 0.5em 1em;
+        margin-top: 1em;
+    }
+
+    .row article {
+        bottom: 2.5em;
+
+    }
+
+    .row article img {
+        width: 15em;
+
+    }
+
+    .row article .text>h4 {
+        font-size: 0.8em;
+        margin: 0 1em 1em 1em;
+
+    }
+
+    .row article .text>p {
+        font-size: 0.7em;
+        margin: 0 1em 0 1em;
+    }
+
+    .row article div>a {
+        margin: 0 1em 0 1em;
+    }
+
 
 }
