@@ -120,6 +120,7 @@ header nav .menu li:last-child a {
 
 /* fin de header */
 
+<<<<<<< HEAD
 /* inicio footer */
 
 footer {
@@ -132,6 +133,9 @@ footer {
     bottom: 0;
     font-size: 110%;
 }
+=======
+/* inicio del footer */
+>>>>>>> feature/blog
 
 footer a {
     color: white;
@@ -142,28 +146,55 @@ footer a:hover {
     color: var(--colorprincipal);
 }
 
+<<<<<<< HEAD
 
 /* fin del footer */
+=======
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
+/* final del footer */
+>>>>>>> feature/blog
 
 /* inicio del hero */
 
 .hero {
+<<<<<<< HEAD
     background-image: url(../images/fondo.jpg);
+=======
+    background-image: url('../images/fondo.jpg');
+>>>>>>> feature/blog
     height: 60vh;
     background-size: cover;
     background-position: center center;
     background-blend-mode: multiply;
+<<<<<<< HEAD
     /* oscurecer la imagen */
     background-color: #888;
     /* le damos color oscuro para terminar de darle esa oscuridad */
     padding-top: 17vh;
     /* es el 17% del viewport head */
+=======
+    background-color: #888;
+    padding-top: 17vh;
+>>>>>>> feature/blog
     color: white;
 }
 
 .hero h1 {
+<<<<<<< HEAD
     font-family: var(--fuentestitulos);
     font-size: 2.25em
+=======
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+>>>>>>> feature/blog
 }
 
 .hero h2 {
@@ -178,7 +209,10 @@ footer a:hover {
 
 .boton {
     display: inline-block;
+<<<<<<< HEAD
     /* se sigue comportando como un elemento en linea */
+=======
+>>>>>>> feature/blog
     background-color: var(--colorprincipal);
     padding: 1.15em;
     color: white;
@@ -191,7 +225,11 @@ footer a:hover {
     color: var(--colorprincipal);
 }
 
+<<<<<<< HEAD
 .boton:hover {
+=======
+.boton:hover i {
+>>>>>>> feature/blog
     transition: transform 0.5s;
     transform: translateX(5px);
 }
@@ -209,23 +247,37 @@ footer a:hover {
 .hero .social a {
     color: white;
     font-size: 2em;
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/blog
 }
 
 .hero .container {
     padding: 0 var(--margingrid);
 }
 
+<<<<<<< HEAD
 /* fin del hero */
 
 /* inicio our services */
+=======
+/* final hero */
+
+/* inicio our services */
+
+>>>>>>> feature/blog
 main section {
     padding: 2.125em var(--margingrid);
 }
 
 main section h2 {
     color: black;
+<<<<<<< HEAD
     font-family: var(--fuentestitulos);
+=======
+    font-family: var(--fuentetitulos);
+>>>>>>> feature/blog
     font-size: 2em;
     text-align: center;
 }
@@ -234,17 +286,27 @@ main section h2 span {
     color: var(--colorprincipal);
 }
 
+<<<<<<< HEAD
 /* hay que hacer para el blog un contenedor para la raya con position relative */
 main section .underline {
     position: relative;
     width: 6.25em;
+=======
+main section .underline {
+    position: relative;
+    width: 6.25rem;
+>>>>>>> feature/blog
     margin: 0 auto;
 }
 
 main section .underline hr {
     position: absolute;
     width: 100%;
+<<<<<<< HEAD
     top: -2.5px;
+=======
+    top: -2px;
+>>>>>>> feature/blog
     border-color: var(--colorprincipal);
 }
 
@@ -295,25 +357,43 @@ main section .enlace {
     font-weight: 700;
 }
 
+<<<<<<< HEAD
 main section .enlace i {
     margin-left: 0.313em;
 }
 
+=======
+>>>>>>> feature/blog
 .fa-truck {
     transform: rotateY(180deg);
 }
 
 
+<<<<<<< HEAD
 
 /* final our services */
 /* inicio about us */
 main #aboutus .grid figure {
 
+=======
+/* fin our services */
+
+/* inicio about us */
+
+main #aboutus .grid figure {
+    /* provisional  background-color: tomato;*/
+    /* provisional  height: 400px;*/
+>>>>>>> feature/blog
     width: 100%;
 }
 
 main #aboutus .grid>div {
+<<<<<<< HEAD
 
+=======
+    /* provisional  background-color: violet;*/
+    /* provisional  height: 400px;*/
+>>>>>>> feature/blog
     width: 100%;
 }
 
@@ -327,15 +407,32 @@ main #aboutus .grid h4 {
     color: var(--colorprincipal);
 }
 
+<<<<<<< HEAD
+=======
+main #aboutus .grid>div a {
+    color: white;
+
+}
+
+main #aboutus .imagen {
+    width: 93%;
+    margin: 1.5em auto;
+}
+
+>>>>>>> feature/blog
 main #aboutus .imagen .marco {
     border: 3px solid var(--colorprincipal);
     transform: rotateZ(10deg);
     transition: 1s;
+<<<<<<< HEAD
 }
 
 main #aboutus .imagen {
     width: 95%;
     margin: 1.5em auto;
+=======
+
+>>>>>>> feature/blog
 }
 
 main #aboutus .imagen .marco img {
@@ -347,6 +444,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     transform: rotateZ(0deg);
 }
 
+<<<<<<< HEAD
 /* final about us */
 
 /* flecha para ir para arriba */
@@ -359,21 +457,134 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     right: 1.25rem;
     position: fixed;
 }
+=======
+/* fin about us */
+
+
+/* comienzo blog */
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #ourblog article,
+.main #ourblog .grid>div {
+    width: 50%;
+    padding: 1em;
+}
+
+main section:last-child {
+    width: 100%;
+}
+
+main #ourblog .grid article h5 {
+    background-color: var(--colorprincipal);
+    width: 3.3em;
+    height: 3.3em;
+    color: white;
+    position: relative;
+    top: 3.313em;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.5em;
+    opacity: 85%;
+}
+
+main #ourblog article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main section h4 {
+    font-size: 0.8em;
+    color: var(--colorprincipal);
+    font-weight: 530;
+    margin-top: 1em;
+}
+
+main section p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: var(--margingrid);
+}
+
+main #ourblog .enlace {
+    font-size: 0.725em;
+}
+
+
+
+
+
+/* fin blog */
+
+/* inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+
+
+/* final footer */
+
+>>>>>>> feature/blog
 
 /* inicio mediaqueries */
 
-@media(min-width:48em) {
-    header .nav-top span {
-        color: white;
-        display: inline;
-    }
-
-    header .nav-top i {
+@media(min-width: 48em) {
+    header .nav-top a i {
         font-size: 120%;
     }
 
-    header .nav-top .container {
+    header .nav-top span {
+        display: inline;
+    }
 
+    header .nav-top .container {
         justify-content: space-between;
     }
 
@@ -383,7 +594,11 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
     main #services article {
         width: 50%;
+<<<<<<< HEAD
         border-bottom: 0;
+=======
+        border-bottom: 0px;
+>>>>>>> feature/blog
         border-left: 1px solid #aaa;
         padding: 1.5em;
         margin: var(--margingrid) 0;
@@ -395,7 +610,10 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
     main #aboutus .grid figure,
     main #aboutus .grid>div {
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/blog
         width: 50%;
     }
 
@@ -404,12 +622,42 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     }
 
     main #aboutus .imagen {
+<<<<<<< HEAD
         width: 87%;
         margin: var(--margingrid) 0;
     }
+=======
+        margin: var(--margingrid) 0 2em 0;
+    }
+
+
+
+    main #ourblog article,
+    .main #ourblog .grid>div {
+        width: 33.333%;
+        margin: 0 auto;
+
+    }
+
+
+    .grid article h5 {
+        background-color: tomato;
+        width: 3.3em;
+        height: 3.3em;
+        color: white;
+        position: relative;
+        top: 3.313em;
+        text-align: center;
+        font-size: 1em;
+        padding: 0.5em;
+        opacity: 85%;
+    }
+
+
+>>>>>>> feature/blog
 }
 
-@media (min-width: 62.75em) {
+@media(min-width: 62.75em) {
     header nav .menu {
         width: auto;
     }
@@ -423,7 +671,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     }
 
     header nav .menu a {
-        padding: 0.5em 0 1.25em 1.25;
+        padding: 0.5em 0 1.25em 1.25em;
         border-bottom: 0px;
     }
 
@@ -438,4 +686,31 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     main #services article:last-child {
         width: 33.333%;
     }
+<<<<<<< HEAD
+=======
+
+    main #ourblog article,
+    .main #ourblog .grid>div {
+        width: 33.333%;
+        padding: 1em;
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+
+    .grid article h5 {
+        background-color: tomato;
+        width: 3.3em;
+        height: 3.3em;
+        color: white;
+        position: relative;
+        top: 3.313em;
+        text-align: center;
+        font-size: 1em;
+        padding: 0.5em;
+        opacity: 85%;
+    }
+
+
+
+>>>>>>> feature/blog
 }
