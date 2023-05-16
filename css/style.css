@@ -145,6 +145,79 @@ footer a:hover {
 
 /* fin del footer */
 
+/* inicio del hero */
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    /* oscurecer la imagen */
+    background-color: #888;
+    /* le damos color oscuro para terminar de darle esa oscuridad */
+    padding-top: 17vh;
+    /* es el 17% del viewport head */
+    color: white;
+}
+
+.hero h1 {
+    font-family: var(--fuentestitulos);
+    font-size: 2.25em
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+}
+
+.boton {
+    display: inline-block;
+    /* se sigue comportando como un elemento en linea */
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+}
+
+.boton:hover {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10em;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+
+}
+
+.hero .container {
+    padding: 0 var(--margingrid);
+}
+
+/* fin del hero */
+
 /* flecha para ir para arriba */
 
 .flecha a {
@@ -196,6 +269,10 @@ footer a:hover {
     header nav .menu a {
         padding: 0.5em 0 1.25em 1.25;
         border-bottom: 0px;
+    }
+
+    .hero .container {
+        padding: 0;
     }
 
 }
