@@ -112,6 +112,28 @@ header nav .menu li:last-child a {
 
 /* fin de header */
 
+/* inicio del footer */
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
+/* final del footer */
+
 /* inicio del hero */
 
 .hero {
@@ -166,7 +188,7 @@ header nav .menu li:last-child a {
 .hero .social {
     display: flex;
     justify-content: space-between;
-    width: 10.5em;
+    width: 10em;
 }
 
 .hero .social a {
@@ -278,7 +300,6 @@ main #aboutus .grid>div {
     width: 100%;
 }
 
-
 main #aboutus .grid h3 {
     font-size: 110%;
     font-weight: 700;
@@ -287,6 +308,11 @@ main #aboutus .grid h3 {
 main #aboutus .grid h4 {
     margin: var(--margingrid) 0;
     color: var(--colorprincipal);
+}
+
+main #aboutus .grid>div a {
+    color: white;
+
 }
 
 main #aboutus .imagen {
@@ -298,6 +324,7 @@ main #aboutus .imagen .marco {
     border: 3px solid var(--colorprincipal);
     transform: rotateZ(10deg);
     transition: 1s;
+
 }
 
 main #aboutus .imagen .marco img {
@@ -363,8 +390,8 @@ main section:last-child {
     width: 100%;
 }
 
-.grid article h5 {
-    background-color: tomato;
+main #ourblog .grid article h5 {
+    background-color: var(--colorprincipal);
     width: 3.3em;
     height: 3.3em;
     color: white;
@@ -395,21 +422,13 @@ main section p {
     margin-bottom: var(--margingrid);
 }
 
-main section .boton {
-    color: var(--colorprincipal);
-    text-decoration: none;
-    font-weight: 700;
+main #ourblog .enlace {
+    font-size: 0.725em;
 }
 
-.grid article div>a {
 
-    font-size: 0.7em;
-    font-weight: 550;
-}
 
-.grid article div a i {
-    color: var(--colorprincipal);
-}
+
 
 /* fin blog */
 
@@ -426,23 +445,7 @@ footer {
     font-size: 110%;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
 
-footer a:hover {
-    color: var(--colorprincipal);
-}
-
-.flecha a {
-    display: block;
-    color: var(--colorprincipal);
-    font-size: 300%;
-    position: fixed;
-    bottom: 4.375rem;
-    right: 1.25rem;
-}
 
 /* final footer */
 
@@ -491,19 +494,15 @@ footer a:hover {
         margin: var(--margingrid) 0 2em 0;
     }
 
+
+
     main #ourblog article,
     .main #ourblog .grid>div {
         width: 33.333%;
-        padding: 1em;
         margin: 0 auto;
-        padding-bottom: 2em;
+
     }
 
-    main section:last-child {
-        width: 33.333%;
-        margin: 0 auto;
-        padding-bottom: 2em;
-    }
 
     .grid article h5 {
         background-color: tomato;
@@ -555,12 +554,6 @@ footer a:hover {
     .main #ourblog .grid>div {
         width: 33.333%;
         padding: 1em;
-        margin: 0 auto;
-        padding-bottom: 2em;
-    }
-
-    main section:last-child {
-        width: 33.333%;
         margin: 0 auto;
         padding-bottom: 2em;
     }
