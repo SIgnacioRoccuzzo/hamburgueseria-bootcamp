@@ -112,158 +112,416 @@ header nav .menu li:last-child a {
 
 /* fin de header */
 
+/* inicio del hero */
+
+.hero {
+    background-image: url('../images/fondo.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #888;
+    padding-top: 17vh;
+    color: white;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+}
+
+.boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10.5em;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+.hero .container {
+    padding: 0 var(--margingrid);
+}
+
+/* final hero */
+
+/* inicio our services */
+
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section:last-child {
+    margin-bottom: 3em;
+}
+
+main #services article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main #services article>div i {
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+    display: inline-block;
+}
+
+main #services article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.15em;
+    margin-bottom: var(--margingrid);
+}
+
+main section .enlace {
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+}
+
+
+/* fin our services */
+
+/* inicio about us */
+
+main #aboutus .grid figure {
+    /* provisional  background-color: tomato;*/
+    /* provisional  height: 400px;*/
+    width: 100%;
+}
+
+main #aboutus .grid>div {
+    /* provisional  background-color: violet;*/
+    /* provisional  height: 400px;*/
+    width: 100%;
+}
+
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+    width: 93%;
+    margin: 1.5em auto;
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+/* fin about us */
+
 
 /* comienzo blog */
-main .row {
-    display: block;
+main section {
+    padding: 2.125em var(--margingrid);
 }
 
-main .container>h2 {
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
     text-align: center;
-    font-family: var(--fuentestitulos);
-    font-size: 250%;
-    font-style: italic;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
     position: relative;
-
+    width: 6.25rem;
+    margin: 0 auto;
 }
 
-main .container>hr {
-    width: 4.5em;
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
     color: var(--colorprincipal);
-    padding: auto;
+    font-weight: 700;
 }
 
-main .container>span {
-    color: var(--colorprincipal);
-    margin-left: 12.9em;
-    font-weight: 900;
-    position: relative;
-    bottom: 0.9em;
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-main .container h2>span {
-    color: var(--colorprincipal);
+main #ourblog article,
+.main #ourblog .grid>div {
+    width: 50%;
+    padding: 1em;
 }
 
-main .container h2>hr {
-    width: 2.1em;
-    color: var(--colorprincipal);
+main section:last-child {
+    width: 100%;
 }
 
-.row article img {
-    width: 12.532em;
-    height: 9.375em;
-    object-fit: cover;
-}
-
-.row article h5 {
+.grid article h5 {
     background-color: tomato;
-    width: 3.5em;
-    height: 3.5em;
+    width: 3.3em;
+    height: 3.3em;
     color: white;
     position: relative;
-    top: 3.48em;
+    top: 3.313em;
     text-align: center;
     font-size: 1em;
     padding: 0.5em;
     opacity: 85%;
 }
 
-.row article {
-    margin-left: 7em;
-
+main #ourblog article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
 }
 
-.row article .text>h3 {
-    font-size: 1.2em;
-    margin-top: 1.3em;
-}
-
-.row article .text>h4 {
+main section h4 {
     font-size: 0.8em;
     color: var(--colorprincipal);
     font-weight: 530;
     margin-top: 1em;
 }
 
-.row article .text>p {
+main section p {
     font-size: 0.9em;
-    color: #999;
+    color: #666;
+    margin-bottom: var(--margingrid);
 }
 
-.row article div>a {
+main section .boton {
     color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.grid article div>a {
+
     font-size: 0.7em;
     font-weight: 550;
 }
 
+.grid article div a i {
+    color: var(--colorprincipal);
+}
+
 /* fin blog */
+
+/* inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
+/* final footer */
 
 
 /* inicio mediaqueries */
 
 @media(min-width: 48em) {
-    header .nav-top span {
-        color: white;
-        display: inline;
+    header .nav-top a i {
+        font-size: 120%;
     }
 
-    header .nav-top i {
-        font-size: 120%;
+    header .nav-top span {
+        display: inline;
     }
 
     header .nav-top .container {
         justify-content: space-between;
     }
 
-    main .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    footer {
+        text-align: left;
     }
 
-    main .container>span {
-        left: 11em;
+    main #services article {
+        width: 50%;
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin: var(--margingrid) 0;
     }
 
-    .row article .text>h3 {
-        font-size: 1em;
-        margin: 0 1em 0.5em 1em;
-        margin-top: 1em;
+    main #services article:last-child {
+        width: 100%;
     }
 
-    .row article {
+    main #aboutus .grid figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+        margin: var(--margingrid) 0 2em 0;
+    }
+
+    main #ourblog article,
+    .main #ourblog .grid>div {
+        width: 33.333%;
         padding: 1em;
-        margin-left: -1em;
-        position: relative;
-        bottom: 2.5em;
         margin: 0 auto;
+        padding-bottom: 2em;
     }
 
-    .row article img {
-        width: 15em;
+    main section:last-child {
+        width: 33.333%;
+        margin: 0 auto;
+        padding-bottom: 2em;
     }
 
-    .row article .text>h4 {
-        font-size: 0.8em;
-        margin: 0 1em 1em 1em;
-
+    .grid article h5 {
+        background-color: tomato;
+        width: 3.3em;
+        height: 3.3em;
+        color: white;
+        position: relative;
+        top: 3.313em;
+        text-align: center;
+        font-size: 1em;
+        padding: 0.5em;
+        opacity: 85%;
     }
-
-    .row article .text>p {
-        font-size: 0.7em;
-        margin: 0 1em 0 1em;
-    }
-
-    .row article div>a {
-        margin: 0 1em 0 1em;
-    }
-
 
 
 }
 
-@media (min-width: 62.75em) {
+@media(min-width: 62.75em) {
     header nav .menu {
         width: auto;
     }
@@ -277,50 +535,49 @@ main .container h2>hr {
     }
 
     header nav .menu a {
-        padding: 0.5em 0 1.25em 1.25;
+        padding: 0.5em 0 1.25em 1.25em;
         border-bottom: 0px;
     }
 
-    main .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .hero .container {
+        padding: 0;
     }
 
-    main .container>span {
-        left: 21.3em;
+    main #services article {
+        width: 33.333%;
     }
 
-    .row article .text>h3 {
+    main #services article:last-child {
+        width: 33.333%;
+    }
+
+    main #ourblog article,
+    .main #ourblog .grid>div {
+        width: 33.333%;
+        padding: 1em;
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+
+    main section:last-child {
+        width: 33.333%;
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+
+    .grid article h5 {
+        background-color: tomato;
+        width: 3.3em;
+        height: 3.3em;
+        color: white;
+        position: relative;
+        top: 3.313em;
+        text-align: center;
         font-size: 1em;
-        margin: 0 1em 0.5em 1em;
-        margin-top: 1em;
+        padding: 0.5em;
+        opacity: 85%;
     }
 
-    .row article {
-        bottom: 2.5em;
-
-    }
-
-    .row article img {
-        width: 15em;
-
-    }
-
-    .row article .text>h4 {
-        font-size: 0.8em;
-        margin: 0 1em 1em 1em;
-
-    }
-
-    .row article .text>p {
-        font-size: 0.7em;
-        margin: 0 1em 0 1em;
-    }
-
-    .row article div>a {
-        margin: 0 1em 0 1em;
-    }
 
 
 }
