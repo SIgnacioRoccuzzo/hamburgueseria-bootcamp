@@ -340,6 +340,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 
 /* comienzo blog */
+
 main section {
     padding: 2.125em var(--margingrid);
 }
@@ -426,11 +427,99 @@ main #ourblog .enlace {
     font-size: 0.725em;
 }
 
-
-
-
-
 /* fin blog */
+
+/* inicio menu */
+
+
+main section #menu {
+    padding: 2.125em var(--margingrid);
+}
+
+main #menu .container {
+    background-color: var(--colorsecundario);
+}
+
+#menu .container h2 {
+    color: white;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+#menu .container h2 span {
+    color: var(--colorprincipal);
+}
+
+main section #menu .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main section #menu .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section #menu .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main section #menu .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu .grid>div ul {
+    margin: 4em;
+}
+
+
+#menu .grid>div li {
+    color: white;
+    padding: 0.313em;
+    font-family: var(--fuenteprincipal);
+
+}
+
+#menu .grid h3 {
+    color: white;
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+    font-size: var(--font-size);
+    margin: 3em;
+}
+
+#menu .grid .underline hr {
+    width: 3.125em;
+
+
+}
+
+#menu .grid>div p {
+    color: #aaa;
+
+}
+
+
+main #menu article,
+.main #menu .grid>div {
+    width: 85%;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* fin del menu */
 
 /* inicio footer */
 
