@@ -622,10 +622,9 @@ main #menu .enlace {
 
     main #menu article,
     .main #menu .row>div {
-        width: 100%;
+        width: 85%;
         padding: 1em;
         margin: 0 auto;
-
     }
 
 
@@ -686,6 +685,7 @@ main #menu .enlace {
         display: flex;
         margin: 0 auto;
         margin-top: 30px;
+        height: 100vh;
 
     }
 
