@@ -455,7 +455,7 @@ main #menu {
     background-color: var(--colorsecundario);
 }
 
-main #menu .row h2 {
+main #menu h2 {
     color: white;
     font-family: var(--fuentetitulos);
     font-size: 2em;
@@ -463,17 +463,24 @@ main #menu .row h2 {
     padding: 0.520em;
 }
 
-.row h2 span {
-    color: var(--colorprincipal);
+main section .under {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
 }
 
-#menu .row .underline hr {
+main section .under hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .under span {
     text-align: center;
-}
-
-main section #menu .row {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
 }
 
 #menu .row>div ul {
@@ -501,12 +508,14 @@ main section #menu .row {
     color: white;
     font-size: var(--fuentetitulos);
     margin: var(--margingrid) 1.5em;
+
 }
 
-#menu .row .underline hr {
-    width: 3.125em;
-    position: relative;
-    right: 9em;
+#menu .row .under-line hr {
+    position: sticky;
+    width: 4rem;
+    color: var(--colorprincipal);
+    margin-left: 1.813em;
 }
 
 #menu .row>div p {
@@ -535,7 +544,7 @@ main #menu article h4 span {
 
 main #menu article,
 .main #menu .row>div {
-    width: 90%;
+    width: 100%;
     padding: 1em;
     margin: 0 auto;
 }
@@ -611,6 +620,14 @@ main #menu .enlace {
         opacity: 85%;
     }
 
+    main #menu article,
+    .main #menu .row>div {
+        width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+
+    }
+
 
 }
 
@@ -665,13 +682,34 @@ main #menu .enlace {
         opacity: 85%;
     }
 
-    main #menu article,
-    .main #menu .row>div {
-        width: 23.333%;
-        padding: 1em;
+    #menu .row {
+        display: flex;
         margin: 0 auto;
-        display: flex
+        margin-top: 30px;
+
     }
 
+    #menu .row>div:first-child {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    main #menu article {
+        width: 80%;
+        display: flex;
+    }
+
+    main #menu .row article>figure {
+        width: 18.333%;
+        padding: 0.625em;
+    }
+
+    main #menu article h4 {
+        font-size: var(--font-size)
+    }
+
+    #menu .row h3 {
+        margin-top: 75px;
+    }
 
 }
