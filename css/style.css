@@ -82,6 +82,16 @@ header nav .menu {
     width: 100%;
 }
 
+header nav .menu .activa {
+    color: var(--colorprincipal);
+}
+
+header nav .menu a:hover {
+    color: var(--colorprincipal);
+    transition: 1s;
+}
+
+
 header nav .hamburguesa {
     cursor: pointer;
     width: 1.875em;
@@ -123,6 +133,20 @@ footer a:hover {
     color: var(--colorprincipal);
 }
 
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+/* final del footer */
+
+/* inicio flecha cursor roja*/
 .flecha a {
     display: block;
     color: var(--colorprincipal);
@@ -130,9 +154,11 @@ footer a:hover {
     position: fixed;
     bottom: 4.375rem;
     right: 1.25rem;
+
 }
 
-/* final del footer */
+/* final flecha cursor roja */
+
 
 /* inicio del hero */
 
@@ -165,7 +191,7 @@ footer a:hover {
 .boton {
     display: inline-block;
     background-color: var(--colorprincipal);
-    padding: 1.15em;
+    padding: 1.10em;
     color: white;
     text-decoration: none;
     border: 1px solid var(--colorprincipal);
@@ -188,12 +214,12 @@ footer a:hover {
 .hero .social {
     display: flex;
     justify-content: space-between;
-    width: 10em;
+    width: 9.5em;
 }
 
 .hero .social a {
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .hero .container {
@@ -289,14 +315,10 @@ main section .enlace {
 /* inicio about us */
 
 main #aboutus .grid figure {
-    /* provisional  background-color: tomato;*/
-    /* provisional  height: 400px;*/
     width: 100%;
 }
 
 main #aboutus .grid>div {
-    /* provisional  background-color: violet;*/
-    /* provisional  height: 400px;*/
     width: 100%;
 }
 
@@ -312,7 +334,6 @@ main #aboutus .grid h4 {
 
 main #aboutus .grid>div a {
     color: white;
-
 }
 
 main #aboutus .imagen {
@@ -324,7 +345,6 @@ main #aboutus .imagen .marco {
     border: 3px solid var(--colorprincipal);
     transform: rotateZ(10deg);
     transition: 1s;
-
 }
 
 main #aboutus .imagen .marco img {
@@ -340,6 +360,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 
 /* comienzo blog */
+
 main section {
     padding: 2.125em var(--margingrid);
 }
@@ -426,29 +447,114 @@ main #ourblog .enlace {
     font-size: 0.725em;
 }
 
-
-
-
-
 /* fin blog */
 
-/* inicio footer */
+/* inicio menu */
 
-footer {
+main #menu {
     background-color: var(--colorsecundario);
-    padding: 1.25em 0px;
-    text-align: center;
+}
+
+main #menu h2 {
     color: white;
-    position: fixed;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+    padding: 0.520em;
+}
+
+main section .under {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main section .under hr {
+    position: absolute;
     width: 100%;
-    bottom: 0;
-    font-size: 110%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+main section .under span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+#menu .row>div ul {
+    margin: var(--margingrid) 1.5em;
 }
 
 
+#menu .row div>nav a {
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-size: 0.75em;
+    text-decoration: none;
+    margin: var(--margingrid)1em;
+    line-height: 2.2em;
 
-/* final footer */
+}
 
+#menu .row div nav a:hover {
+    background-color: var(--colorprincipal);
+    padding-right: 100%;
+    display: flex;
+}
+
+#menu .row h3 {
+    color: white;
+    font-size: var(--fuentetitulos);
+    margin: var(--margingrid) 1.5em;
+
+}
+
+#menu .row .under-line hr {
+    position: sticky;
+    width: 4rem;
+    color: var(--colorprincipal);
+    margin-left: 1.813em;
+}
+
+#menu .row>div p {
+    color: #aaa;
+    margin: var(--margingrid) 2.5em;
+    font-size: 0.695em;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+main #menu article h4 {
+    color: white;
+    font-size: 0.625sem;
+}
+
+main #menu article h4 span {
+    color: var(--colorprincipal);
+    padding-left: 1em;
+}
+
+#menu .row>div article p {
+    color: #aaa;
+    font-size: 0.712em;
+    margin: var(--margingrid) 0;
+}
+
+main #menu article,
+.main #menu .row>div {
+    width: 100%;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+main #menu .enlace {
+    font-size: 0.725em;
+}
+
+
+/* fin del menu *
 
 /* inicio mediaqueries */
 
@@ -494,16 +600,12 @@ footer {
         margin: var(--margingrid) 0 2em 0;
     }
 
-
-
     main #ourblog article,
     .main #ourblog .grid>div {
         width: 33.333%;
         margin: 0 auto;
 
     }
-
-
 
     .grid article h5 {
         background-color: tomato;
@@ -516,6 +618,13 @@ footer {
         font-size: 1em;
         padding: 0.5em;
         opacity: 85%;
+    }
+
+    main #menu article,
+    .main #menu .row>div {
+        width: 85%;
+        padding: 1em;
+        margin: 0 auto;
     }
 
 
@@ -572,6 +681,35 @@ footer {
         opacity: 85%;
     }
 
+    #menu .row {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 30px;
+        height: 100vh;
 
+    }
+
+    #menu .row>div:first-child {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    main #menu article {
+        width: 80%;
+        display: flex;
+    }
+
+    main #menu .row article>figure {
+        width: 18.333%;
+        padding: 0.625em;
+    }
+
+    main #menu article h4 {
+        font-size: var(--font-size)
+    }
+
+    #menu .row h3 {
+        margin-top: 75px;
+    }
 
 }
